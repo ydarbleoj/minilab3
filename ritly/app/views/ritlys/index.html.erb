@@ -1,0 +1,9 @@
+
+Hello 
+	
+	<%= form_for @ritly, url: {action: "create"} do |f|  %>
+		<%= f.text_field :url, placeholder: "Enter Your URL Here" %> 
+		<%= f.text_field :random_string, placeholder: " Enter Your Custom URL Here" %>
+		<%= f.submit "Submit" %>
+	<% end %>
+
