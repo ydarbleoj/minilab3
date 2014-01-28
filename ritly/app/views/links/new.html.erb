@@ -1,0 +1,12 @@
+<div class="container">
+		
+	<h1>Welcome to Ritly</h1>
+
+			<%= form_for @link do |f| %>
+			<%= f.text_field :original_link, placeholder: "Enter URL" %> <br>
+		    <%= f.text_field :new_link, placeholder: "Enter Custom URL" %> <br>		
+	    	<%= f.submit "Build" %> <br>
+	    	<% end %>
+
+</div>
+

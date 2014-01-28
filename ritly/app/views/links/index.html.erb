@@ -1,0 +1,30 @@
+<div class="container">	
+		<h1>Welcome to Ritly</h1>
+
+	<div class="row">
+	    <div class="span6 offset3">
+
+		
+
+			<%= form_for @link do |f| %>
+			<!-- this isn't functional until i institute it in the controller -->
+			  <% if @link.errors.any? %>
+			    <div class="error_messages">
+			      <h2>Form is invalid</h2>
+			      <ul>
+			        <% for message in @link.errors.full_messages %>
+			          <li><%= message %></li>
+			        <% end %>
+			      </ul>
+			    </div>
+			  <% end %>
+			 
+			  	<%= f.text_field :original_link, :placehoder => "Orginal Link" %> <br>
+			  
+			    <%= f.text_field :new_link, :placehoder => "Custom Link Here"  %> <br>
+			  
+			  <%= f.submit "Create New Link", class: "btn btn-large btn-primary" %> <br>
+			<% end %>
+		</div>
+	</div> 
+</div>

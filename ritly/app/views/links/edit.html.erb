@@ -1,0 +1,5 @@
+<%= form_for @link do |f| %>
+  <%= label_tag(:original_link, "Target URL:") %> <%= f.text_field :original_link, value: @link.link %></br>
+  <%= label_tag(:random_string, "Link Token:") %> <%= f.text_field :new_link, value: @link.new_link %></br>
+  <%= f.submit "Edit" %>
+<% end %>

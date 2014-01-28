@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Ritly::Application.config.secret_key_base = 'fcd370412e86666a2abb85a7db0fd1d66711513b0bc80f3a21a3b18364f7d804870e117a64f17ff7c0f31c9da5e27d7131cd15f3d8a128c13219a1f3e060590b'
+Ritly::Application.config.secret_key_base = '7761f3992c0f086e029dc6677d66c2f60ea226dd7b37dfe9f468a2420b5d50c3e2138f424fae9c95b43fa607b36b3132127b49dd412693e92c301e7769dcb829'
